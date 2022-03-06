@@ -6,7 +6,7 @@ export default function Place(props) {
                 <img src={props.item.imageUrl} className="place--img" alt={`${props.item.title}`} />
                 <div className="place--info">
                     <p className="place--location">
-                        <img src="/img/location.png" alt="location icon"/>
+                        <img src={process.env.PUBLIC_URL + '/img/location.png'} alt="location icon"/>
                         <span className="place--country">{props.item.location}</span>
                         <a href={props.item.googleMapsUrl} target="blank" className="place--map">View on Google Maps</a>
                     </p>
